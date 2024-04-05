@@ -4,34 +4,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Customer Care</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Create Chat</title>
 <style>
 /* Your CSS styles here */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
-    color: #333;
+    background-color: #1E232C; /* Set primary background color */
+    color: #FFFFFF; /* Set primary text color */
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #2C333A; /* Set container background color */
+    border-radius: 10px; /* Add border radius for container */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add box shadow */
 }
 
 h1 {
-    color: #333;
+    color: #FFD700; /* Set heading color */
 }
 
 p {
     line-height: 1.5;
 }
 
-ol, ul {
+ul {
     padding-left: 20px;
 }
 
@@ -39,19 +45,45 @@ li {
     margin-bottom: 10px;
 }
 
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
 }
 
-.button:hover {
-    background-color: #0056b3;
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    animation: fadeIn 1s ease-in-out; /* Apply fadeIn animation */
 }
 </style>
+</head>
+<body>
+<div class="container">
+    <h1>How to Create Chat</h1>
+    <h2>(I) Add Member</h2>
+    <ol>
+        <li>Step 1: Open the chat.</li>
+        <li>Step 2: Click on the plus (+) button.</li>
+        <li>Step 3: Enter the relative code.</li>
+        <li>Step 4: Click "OK".</li>
+        <li>Step 5: Chat starts.</li>
+    </ol>
+    <h2>(II) How to Share Your Connection Address</h2>
+    <ol>
+        <li>Step 1: Open the chat.</li>
+        <li>Step 2: Tap on the top-right share icon.</li>
+        <li>Step 3: Select media and share.</li>
+    </ol>
+    <p>(This chat is text-based only. The app provides privacy, so manual member addition is required. In the next update, automatic member addition and group chat initiation will be implemented.)</p>
+</div>
+</body>
+</html>
 </head>
 <body>
 <div class="container">
@@ -63,7 +95,7 @@ li {
         <li>Step 3: Write a description to explain your issue in detail.</li>
         <li>Step 4: Click the button below to send an email using your default mail app.</li>
     </ol>
-    <a href="mailto:support@example.com?subject=Customer%20Support&body=Please%20describe%20your%20issue%20here." class="button">Send Email</a>
+
     
     <h2>(II) Reach Us via Phone</h2>
     <ol>
@@ -71,7 +103,7 @@ li {
         <li>Step 2: Click on the "Customer Care" option.</li>
         <li>Step 3: Click the button below to call our customer care directly.</li>
     </ol>
-    <a href="tel:+1234567890" class="button">Call Customer Care</a>
+    
 </div>
 </body>
 </html>
